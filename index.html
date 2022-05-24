@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body onload="initComponents()">
+    <jj-modal
+      id="one"
+      data-close=":scope > .section > .nav > .close"
+      data-show=":scope > .section"
+    >
+      <button>section one</button>
+    </jj-modal>
+
+    <jj-modal id="two" data-close=":scope > .section > .nav > .close" data-show=":scope > .section">
+      <button> section two</button>
+    </jj-modal>
+
+    <template id="section-one">
+      <div class="section">
+        <div class="nav">
+          <h1>Section one</h1>
+          <button class="close">Close</button>
+        </div>
+      </div>
+    </template>
+
+    <template id="section-two">
+      <div class="section">
+        <div class="nav">
+          <h1>Section two</h1>
+          <button class="close">Close</button>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
